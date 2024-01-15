@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 👨‍💻 Как правильно деплоить сайт?
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```ssh
+cd /var/www/www-root/data/www/psysystem.ru
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Установка GIT
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```ssh
+sudo apt update
+sudo apt install git
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Настройка git
 
-## Learn More
+https://www.youtube.com/watch?v=i-T5rJ1WkOI&t=2s
 
-To learn more about Next.js, take a look at the following resources:
+```
+git config --global user.name "thefubon"
+git config --global user.email "thefubon@gmail.com"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### После клонируем проект с GitHub и стандартные команды
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+https://github.com/settings/tokens
 
-## Deploy on Vercel
+```ssh
+git clone 'https://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@github.com/thefubon/psysystem-ru.git'
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+В туже папку
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```ssh
+git clone https://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@github.com/thefubon/psysystem-ru.git ./
+```
+
+Из GitHub На сервер
+
+```ssh
+git reset --hard
+git pull
+
+Скорее всего, правильным решением в данном случае будет:
+git fetch --all
+git reset --hard origin/main
+```
