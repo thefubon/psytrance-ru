@@ -6,14 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prod": "vercel --prod"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "vercel": "^33.0.1"
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "@types/node": "^20",
