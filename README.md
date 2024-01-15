@@ -1,7 +1,7 @@
 # 👨‍💻 Как правильно деплоить сайт?
 
 ```ssh
-cd /var/www/www-root/data/www/psysystem.ru
+cd /var/www/www-root/data/www/psytrance.ru
 ```
 
 ### Установка GIT
@@ -25,13 +25,13 @@ git config --global user.email "thefubon@gmail.com"
 https://github.com/settings/tokens
 
 ```ssh
-git clone 'https://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@github.com/thefubon/psysystem-ru.git'
+git clone 'https://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@github.com/thefubon/psytrance-ru.git'
 ```
 
 В туже папку
 
 ```ssh
-git clone https://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@github.com/thefubon/psysystem-ru.git ./
+git clone https://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@github.com/thefubon/psytrance-ru.git ./
 ```
 
 Из GitHub На сервер
